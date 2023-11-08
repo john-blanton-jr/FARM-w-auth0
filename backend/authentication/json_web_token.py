@@ -1,8 +1,11 @@
 from dataclasses import dataclass
 
 import jwt
-from config import settings
-from custom_exceptions import BadCredentialsException, UnableCredentialsException
+from authentication.config import settings
+from authentication.custom_exceptions import (
+    BadCredentialsException,
+    UnableCredentialsException,
+)
 
 
 @dataclass
